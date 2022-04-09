@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+.js-nav {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    left: 2em;
+}
+
+.StreamsHero-image {
+    /* Wave Color */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#59adeb+0,42c2b5+52,34ce93+100 */
+    background: #dc2320;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #dc2320 0%, #ff6600 52%, #ffcc66 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #dc2320 0%, #ff6600 52%, #ffcc66 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #dc2320 0%, #ff6600 52%, #ffcc66 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dc2320', endColorstr='#ffcc66', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    background-size: 350% 350%;
+    animation: waveColors 8s ease infinite;
+    /* End Wave Color */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.StreamsHero-header {
+    color: #fff;
+    font-weight: 200;
+    line-height: 48px;
+    margin-bottom: -5px;
+    font-size: 32px;
+}
+
+.StreamsHero-blurb {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 28px;
+    opacity: .7;
+    -ms-filter: "alpha(opacity=70)";
+    transition: opacity 300ms linear;
+    padding-bottom: 2em;
+}
+
+  
+/* Animation Wave Color */
+
+@-webkit-keyframes waveColors {
+    0% {
+        background-position: 0% 7%;
+    }
+    50% {
+        background-position: 100% 94%;
+    }
+    100% {
+        background-position: 0% 7%;
+    }
+}
+  
+@keyframes waveColors {
+    0% {
+        background-position: 0% 7%;
+    }
+    50% {
+        background-position: 100% 94%;
+    }
+    100% {
+        background-position: 0% 7%;
+    }
+}
+
+/* End Animation Wave Color */
+
+/* Style the body */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #DC2320;
+  }
+
+/* Header/logo Title */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #DC2320;
+    color: #333;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+
+h2 {
+    color: #DC2320;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #333;
+
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #DC2320;
+    width: 0%;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #DC2320;
+    transition: 0.5s;
+    color: white;
+}
+
+/* Active/current link */
+.navbar a.active {
+     /* Wave Color */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#59adeb+0,42c2b5+52,34ce93+100 */
+    background: #dc2320;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #dc2320 0%, #ff6600 52%, #ffcc66 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #dc2320 0%, #ff6600 52%, #ffcc66 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #dc2320 0%, #ff6600 52%, #ffcc66 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dc2320', endColorstr='#ffcc66', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    background-size: 350% 350%;
+    animation: waveColors 8s ease infinite;
+    /* End Wave Color */
+}
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #DC2320;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.side h2{
+    color: #333;
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+}
+  
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+img{
+    max-height:90%; 
+    max-width:90%;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+     /* Wave Color */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#59adeb+0,42c2b5+52,34ce93+100 */
+    background: #dc2320;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #dc2320 0%, #ff6600 52%, #ffcc66 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #dc2320 0%, #ff6600 52%, #ffcc66 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #dc2320 0%, #ff6600 52%, #ffcc66 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dc2320', endColorstr='#ffcc66', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    background-size: 350% 350%;
+    animation: waveColors 8s ease infinite;
+    /* End Wave Color */
+    width: 100%;
+}
+
+footer p{
+    padding-bottom: 50px;
+}
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }

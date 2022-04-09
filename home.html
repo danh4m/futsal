@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="width=device-width, initial-scale=1">
+    <meta name = "keywords" content = "Edinburgh Futsal, Napier Futsal, Student sport">
+    <title>Edinburgh Napier Futsal</title>
+    <link rel="icon" href="icon.JPG">
+    <link rel = "stylesheet" href = "style.css">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<script>
+//this function displays todays date
+function showDate() {
+  var d = new Date();
+  var curr_date = d.getDate();
+  var curr_month = d.getMonth() + 1; //months are zero based
+  var curr_year = d.getFullYear();
+  document.write(curr_date + "-" + curr_month + "-" + curr_year);
+}
+//============================================================================
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+</script>
+
+<body>
+
+<div class="header">
+    <div class="StreamsHero-image">
+        <div class="StreamsHero-content">
+            <h2 class="StreamsHero-header">Edinburgh Napier University Futsal Club</h2>
+            <p class="StreamsHero-blurb"><b>Founded 2021.</b></p>
+        </div>
+    </div>
+</div>
+
+<div class="navbar">
+    <a href="home.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="team.html"><i class="fa fa-fw fa-user"></i> Meet the Team</a>
+    <a href="https://www.napierstudents.com/organisation/sports/futsal/"target="_newtab"> <i class="fa fa-fw fa-exclamation-triangle"></i> Our ENSA Page</a>
+    <a href="mailto:napierfutsal@gmail.com" target="_newtab"><i class="fa fa-fw fa-envelope"></i> Get in touch</a>
+    <a href="https://www.instagram.com/napierfutsal/?hl=en"><i class="fa fa-fw fa-instagram"target="_blank"></i> Instagram</a>
+    <a href="home.html" class="right"><i class="fa fa-fw fa-globe"></i> Edinburgh Napier University Futsal Club</a>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>  
+</div>
+
+
+
+<div class="row">
+  <div class="side">
+    <h2 style="text-align: center;">NAPIER FUTSAL</h2>
+    <img src="icon.JPG" style="text-align: center;" alt="Napier Futsal Logo">
+    <h4>EST 2021</h4>
+    <p>Edinburgh Napier's newest sports club.</p>
+
+    <h3>See UEFA Futsal on Twitter</h3>
+    <a class="twitter-timeline" data-theme="light" data-tweet-limit="3" 
+    href="https://twitter.com/UEFAFutsal?ref_src=twsrc%5Etfw">Tweets by 
+    UEFA Futsal</a> <script async src="https://platform.twitter.com/widgets.js"
+    charset="utf-8"></script>
+</div>
+
+
+<div class="main">
+    <hr class="solid">
+    <h2>WHAT IS FUTSAL?</h2>
+    <h5>Written in March, 2022</h5>
+    <div class="fakeimg" style="height:200px;"> Insert image here</div>
+    <p>Some text..</p>
+    <p>
+        Futsal is a fast paced association football game played on a hard 
+        court, smaller than a football pitch, and mainly indoors. Joining 
+        Napier Futsal is a a great way to learn and understand this beautiful,
+         fast-paced game whilst meeting fellow students and making new friends
+         <br><br>
+
+        <b>SOME RULES</b><br>
+        Futsal has similarities to five-a-side football however Futsal has it's
+         own unique set of rules. Find out more from this 
+         <a href="https://www.uefa.com/futsaleuro/news/0257-0df011694488-660a2a07b52d-1000--futsal-rules-a-quick-guide/"target="_newtab">QUICK GUIDE</a> from UEFA.<br>
+         <br>To list a few...<br><br>
+         - There are no throw-ins, when the ball goes out of play you can restart with a Kick-in <br>
+         - Teams are composed of 1 goalie and 4 outfield players however squads are made up of 14 people. <br>
+         - Five fouls = One Penalty.<br>
+         - Unlimited substitutions - yep that's right - unlimited.<br>
+         
+        <br><br>
+        The Napier Futsal team is one for all skill levels and we welcome all 
+        levels of ability from complete beginner to more experienced players.
+        <br><br><b>If you wish to join or have any queries then please contact: 
+        napierfutsalteam@gmail.com</b>
+    </p>
+
+    <hr class="solid">
+    <h2>WHO ARE WE?</h2>
+    <h5>Written in March 2022</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>EST 2021</p>
+    <p>
+        Formed in the late stages of 2021, Edinburgh Napier Futsal Club are 
+        currently one of the universities newest sports clubs. At the present 
+        time, we are only attending training and playing recreational games. 
+        This is because the league has finished for the season.<br><br>As a club
+        we aim to participate in competitive futsal next season around September
+        2022.<br><br>
+
+        <b>TRAINING</b><br>
+        Training currently takes place on a weekly basis every Wednesday 
+        evening at [EN]GAGE Sport and Fitness Centre from 20:15 until 21:45. 
+        Training takes place in the form of warm up stretches followed by 
+        drills, perhaps a <b><i>Rondo</i></b> or two before finally playing a Futsal 
+        game where we aim to implement what we have just trained.
+        
+        <br><br><b>If you wish to join or have any queries then please contact: 
+            napierfutsalteam@gmail.com</b>
+    </p>
+    <hr class="solid">
+  </div>
+</div>
+
+<div class="footer">
+    <img src="footerLogo.png" alt="Footer Logo" style="width: 80px; height: 80px;">
+    <p>
+    <b>Copyright &copy; 2022 - Edinburgh Napier University Futsal Club - All rights reserved - <script type="text/javascript">showDate();</script></b>
+    </p>
+</div>
+
+</body>
+</html>
